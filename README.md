@@ -151,12 +151,40 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 ---
 
+## 📖 Λεξικό της Ελληνικής Tech Αγοράς (Jargon)
+Τι θα ακούσετε στο γραφείο και τι πραγματικά σημαίνει:
+- **"Έσκασε το pipeline στο prod"**: Κάτι χάλασε στον κώδικα που κατεβάζει/επεξεργάζεται τα δεδομένα και τα dashboards δείχνουν λάθος νούμερα.
+- **"Κάνε ένα quick align με τον PM"**: Πήγαινε μίλα με τον Product Manager γιατί διαφωνείτε στο τι πρέπει να φτιαχτεί.
+- **"Μην το κάνουμε over-engineer"**: Μην γράφεις 500 γραμμές κώδικα (ή Deep Learning) για κάτι που λύνεται με ένα απλό `GROUP BY`.
+- **"Ποιο είναι το Business value;"**: Αν αυτό που φτιάχνεις δεν φέρνει έσοδα ή δεν γλιτώνει χρόνο, δεν πρέπει να το φτιάξουμε.
+
+---
+
+## 🧰 The "Day 1" Starter Kit
+Δείτε τον φάκελο [`templates/`](templates/) για να βρείτε:
+- Ένα [Data Science CV Template](templates/data_science_cv_template.md) βελτιστοποιημένο για ATS.
+- Το **Project Boilerplate**: Πώς στήνεται σωστά ένα Data project (με `requirements.txt`, `Dockerfile` κλπ).
+
+---
+
+## 🤖 AI CV Reviewer Script
+Δοκιμάστε το Python script μας [`tools/cv_reviewer_agent.py`](tools/cv_reviewer_agent.py). Λειτουργεί σαν ένας αυστηρός Έλληνας Hiring Manager! Δώστε του το βιογραφικό σας και θα σας κάνει review με χρήση AI (απαιτεί OpenAI API Key).
+
+---
+
+## 🏢 Real Greek Business Cases
+Διαβάστε το [SCENARIOS.md](SCENARIOS.md) για να δείτε 3 πραγματικά σενάρια που αντιμετωπίζουν οι Έλληνες Data Professionals (Τράπεζες, NPLs, E-commerce) και πώς πρέπει να τα σκεφτείτε.
+
+---
+
 ## 🎤 Technical Interviews
 Διαβάστε το [INTERVIEWS.md](INTERVIEWS.md) για να δείτε τι ακριβώς ρωτάνε οι ελληνικές εταιρείες στα technical assessments (HackerRank, Take-home projects).
 
 ---
 
 ## 🤝 Contributing
+
+Αν δεν έχετε ξανακάνει ποτέ Open Source contribution, διαβάστε τον οδηγό **["My First PR" (FIRST_PR.md)](FIRST_PR.md)**! Σας παίρνουμε από το χέρι για να κάνετε το πρώτο σας βήμα στο GitHub.
 
 Θέλετε να προσθέσετε νέα resources για Agentic AI, Vector Databases ή Prompt Engineering;
 Διαβάστε το [CONTRIBUTING.md](CONTRIBUTING.md) για να δείτε πώς μπορείτε να συνεισφέρετε!

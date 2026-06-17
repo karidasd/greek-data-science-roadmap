@@ -66,6 +66,24 @@
         .cost-free { background: #22c55e; color: #f0fdf4; }
         .cost-paid { background: #64748b; color: #f8fafc; }
 
+        /* Quiz Button & Modal */
+        .quiz-btn-container { text-align: center; margin: 40px 0; }
+        .quiz-btn { background: #0ea5e9; color: white; border: none; padding: 15px 30px; font-size: 1.2em; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background 0.3s, transform 0.2s; box-shadow: 0 4px 6px rgba(14, 165, 233, 0.4); }
+        .quiz-btn:hover { background: #0284c7; transform: translateY(-2px); }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.9); z-index: 100; justify-content: center; align-items: center; }
+        .modal-content { background: #1e293b; padding: 30px; border-radius: 12px; width: 90%; max-width: 500px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .modal-content h2 { color: #38bdf8; margin-top: 0; }
+        .quiz-question { margin-bottom: 20px; font-size: 1.1em; }
+        .quiz-options { display: flex; flex-direction: column; gap: 10px; }
+        .quiz-option { background: #334155; border: 1px solid #475569; color: #f8fafc; padding: 10px; border-radius: 6px; cursor: pointer; text-align: left; transition: background 0.2s; }
+        .quiz-option:hover { background: #475569; }
+        .close-btn { float: right; cursor: pointer; color: #94a3b8; font-size: 1.5em; font-weight: bold; }
+        .close-btn:hover { color: #f8fafc; }
+        #quiz-result { display: none; margin-top: 20px; padding: 15px; border-radius: 8px; font-weight: bold; }
+        .result-high { background: #14532d; color: #4ade80; border: 1px solid #22c55e; }
+        .result-mid { background: #7c2d12; color: #fdba74; border: 1px solid #ea580c; }
+        .result-low { background: #4a044e; color: #c084fc; border: 1px solid #a855f7; }
+
     </style>
 </head>
 <body>
@@ -131,6 +149,23 @@
 
     </div>
 
+    <div class="quiz-btn-container">
+        <button class="quiz-btn" onclick="openQuiz()">🎮 Am I Ready? (Take the Agentic Quiz)</button>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeQuiz()">&times;</span>
+            <h2>Self-Assessment Quiz</h2>
+            <div id="quiz-container">
+                <p id="question-text" class="quiz-question"></p>
+                <div id="options-container" class="quiz-options"></div>
+            </div>
+            <div id="quiz-result"></div>
+        </div>
+    </div>
+
     <!-- Dynamic Resources Section -->
     <div id="resources-section">
         <h2>📚 Recommended Resources</h2>
@@ -169,6 +204,69 @@
                 });
             })
             .catch(error => console.error('Error loading resources:', error));
+
+        // Quiz Logic
+        const questions = [
+            { q: "How do you handle a dirty dataset with 1M rows in 2026?", options: ["Write a Python script loop manually", "Ask an LLM to generate a Pandas/Polars script", "Do it manually in Excel", "Complain to data engineering"], correct: 1 },
+            { q: "A stakeholder asks for a model to predict churn by tomorrow.", options: ["Tell them it's impossible", "Build a complex Deep Learning model", "Use AutoML/Scikit-learn for a quick baseline Random Forest", "Give them raw data instead"], correct: 2 },
+            { q: "What is your main role as a Data Professional in the Agentic Era?", options: ["Memorizing syntax", "Writing SQL queries from scratch", "Orchestrating AI tools and translating data to business value", "Creating pie charts"], correct: 2 }
+        ];
+        
+        let currentQuestion = 0;
+        let score = 0;
+
+        function openQuiz() {
+            document.getElementById('quiz-modal').style.display = 'flex';
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-result').style.display = 'none';
+            document.getElementById('quiz-container').style.display = 'block';
+            showQuestion();
+        }
+
+        function closeQuiz() {
+            document.getElementById('quiz-modal').style.display = 'none';
+        }
+
+        function showQuestion() {
+            if (currentQuestion >= questions.length) {
+                showResult();
+                return;
+            }
+            const qData = questions[currentQuestion];
+            document.getElementById('question-text').innerText = `${currentQuestion + 1}. ${qData.q}`;
+            const optionsDiv = document.getElementById('options-container');
+            optionsDiv.innerHTML = '';
+            qData.options.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-option';
+                btn.innerText = opt;
+                btn.onclick = () => {
+                    if (index === qData.correct) score++;
+                    currentQuestion++;
+                    showQuestion();
+                };
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function showResult() {
+            document.getElementById('quiz-container').style.display = 'none';
+            const resDiv = document.getElementById('quiz-result');
+            resDiv.style.display = 'block';
+            const percentage = (score / questions.length) * 100;
+            
+            if (percentage === 100) {
+                resDiv.className = 'result-high';
+                resDiv.innerHTML = `Σκορ: ${percentage}%<br><br>🔥 Άριστα! Σκέφτεσαι ήδη σαν Agentic Data Professional. Είσαι έτοιμος για την αγορά του 2026!`;
+            } else if (percentage > 0) {
+                resDiv.className = 'result-mid';
+                resDiv.innerHTML = `Σκορ: Math.round(${percentage})%<br><br>👍 Καλό ξεκίνημα! Πρέπει να εστιάσεις λίγο περισσότερο στο πώς να χρησιμοποιείς το AI για αυτοματοποίηση αντί να γράφεις κώδικα από το μηδέν.`;
+            } else {
+                resDiv.className = 'result-low';
+                resDiv.innerHTML = `Σκορ: ${percentage}%<br><br>📚 Χρειάζεται δουλειά! Διάβασε το Roadmap προσεκτικά. Η αγορά έχει αλλάξει, προσπάθησε να προσαρμόσεις το mindset σου!`;
+            }
+        }
     </script>
 </body>
 </html>
