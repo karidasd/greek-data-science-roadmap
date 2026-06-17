@@ -24,6 +24,36 @@
   * *Ιδέα για Project:* Scraper που μαζεύει τιμές ενοικίων στο κέντρο της Αθήνας και φτιάχνει έναν διαδραστικό χάρτη με Folium που δείχνει πού είναι τα "φθηνά" διαμερίσματα.
 
 ---
+
+## ⌨️ Code Snippets (Πώς "χτυπάμε" τα Ελληνικά APIs)
+
+Το να ξέρετε να καλείτε ένα REST API είναι βασικό skill. Δείτε ένα απλό παράδειγμα σε Python για το πώς παίρνουμε δεδομένα από τη Διαύγεια χωρίς να κατεβάζουμε χειροκίνητα PDFs:
+
+### Παράδειγμα: API της Διαύγειας (Python)
+```python
+import requests
+import pandas as pd
+
+# Αναζήτηση των τελευταίων 50 αποφάσεων (π.χ. Δήμος Αθηναίων / Ενδεικτικό Query)
+# Δείτε το documentation στο diavgeia.gov.gr/api/help
+url = "https://diavgeia.gov.gr/opendata/search?q=organizationUid:50024&size=50"
+headers = {"Accept": "application/json"}
+
+response = requests.get(url, headers=headers)
+
+if response.status_code == 200:
+    data = response.json()
+    # Μετατροπή του JSON response κατευθείαν σε Pandas DataFrame
+    df = pd.DataFrame(data['decisions'])
+    print(f"✅ Βρέθηκαν {len(df)} αποφάσεις.")
+    # Εμφάνιση του θέματος και της ημερομηνίας των πρώτων 3
+    print(df[['subject', 'issueDate']].head(3))
+else:
+    print(f"❌ Σφάλμα API: HTTP {response.status_code}")
+```
+*Tip: Χρησιμοποιήστε το AI (π.χ. ChatGPT) δίνοντάς του το documentation URL ενός API και ζητήστε του να σας γράψει τον Python wrapper!*
+
+---
 💡 **Pro Tip:** Χρησιμοποιήστε το [Greek-Data-Kit](https://github.com/karidasd/Greek-Data-Kit) που είναι ήδη φτιαγμένο για να διευκολύνει την άντληση πολλών από αυτά τα δεδομένα!
 
 ---

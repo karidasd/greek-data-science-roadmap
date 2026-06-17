@@ -54,3 +54,11 @@ git push origin add-my-new-resource
 Όταν γράφεις την περιγραφή του PR (στο βήμα 7), απόφυγε να γράψεις απλά τον τίτλο "update" ή "fix". Γράψε κάτι πιο αναλυτικό:
 > *"Πρόσθεσα ένα link για το μάθημα του Andrew Ng στο resources.json επειδή παρατήρησα ότι δεν είχαμε καλό υλικό για Prompt Engineering."*
 Αυτό βοηθάει τον maintainer (εμένα!) να καταλάβει αμέσως το **Γιατί**, κάνοντας το Merge πολύ πιο γρήγορο.
+
+## 💎 Το Μυστικό των "Conventional Commits"
+Στο Βήμα 5 (Commit), αντί να γράψεις `git commit -m "added something"`, δοκίμασε να χρησιμοποιήσεις το standard των "Conventional Commits". Στις εταιρείες είναι υποχρεωτικό, και αν το κάνεις στο GitHub θα δείξεις απίστευτο επαγγελματισμό:
+- `feat: added Andrew Ng course to resources` (Για νέο χαρακτηριστικό/περιεχόμενο)
+- `fix: corrected typo in README` (Για διόρθωση λάθους/bug)
+- `docs: updated contribution guidelines` (Για αλλαγή αποκλειστικά σε documentation)
+
+Δοκίμασέ το στο πρώτο σου PR!

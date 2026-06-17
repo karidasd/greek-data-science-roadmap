@@ -76,6 +76,14 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 ---
 
+## 🛑 Anti-Patterns (Τι ΝΑ ΜΗΝ κάνετε)
+Στην προσπάθεια να εντυπωσιάσουν, πολλοί αρχάριοι πέφτουν σε παγίδες. Αποφύγετε τα παρακάτω "Anti-Patterns":
+- ❌ **Over-Engineering:** Το να γράφεις ένα Custom Deep Learning Neural Network σε PyTorch, όταν ένα απλό XGBoost (ή ακόμα και μια Λογιστική Παλινδρόμηση) λύνει το business πρόβλημα στο 1/10 του χρόνου με σχεδόν το ίδιο accuracy.
+- ❌ **Σνομπάροντας την SQL:** Το να νομίζεις ότι η Python τα κάνει όλα. Στην πραγματικότητα, η SQL είναι η *lingua franca* των δεδομένων. Πολλές εταιρείες θα σε κόψουν στη συνέντευξη αν δεν ξέρεις Window Functions (`PARTITION BY`), ακόμα κι αν ξέρεις τέλειο LangChain.
+- ❌ **Το Σύνδρομο του "Τέλειου Μοντέλου":** Το να ξοδεύεις 2 εβδομάδες για να πας το accuracy από 92% σε 93%, ενώ το τμήμα Πωλήσεων περιμένει το μοντέλο για να τρέξει μια καμπάνια marketing *σήμερα*. (Good enough is good enough).
+
+---
+
 ## 🤝 How to Work WITH AI, not against it
 
 - **Stop Memorizing Syntax:** Don't spend hours memorizing matplotlib parameters. Spend those hours learning *how to ask* an LLM to build the visualization, and learning *which* visualization actually tells the story.
@@ -132,6 +140,13 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 > 💡 **Σημείωση για την Τοπική Αγορά:** Αν αναφερόμαστε σε μια αυστηρά παραδοσιακή ελληνική επιχείρηση, χωρίς Remote χαρακτηριστικά και χωρίς το AI-Premium (δηλαδή κλασικούς ρόλους Data), οι καθαροί μισθοί συνήθως διαμορφώνονται περίπου **20% με 30% χαμηλότερα** (π.χ. 1,100€-1,400€ για Junior/Mid).
 
+### 🛠️ Το Ελληνικό Enterprise Tech Stack
+Τι χρησιμοποιούν πραγματικά οι μεγάλες εταιρείες στην Ελλάδα (Τράπεζες, Telcos, Retailers); Ξεχάστε το απλό Jupyter Notebook στον τοπικό σας υπολογιστή.
+- **Cloud & Big Data:** Η αγορά είναι χωρισμένη κυρίως σε **Microsoft Azure** (πάρα πολλές ελληνικές εταιρείες είναι Microsoft partners) και **AWS** (στις Startups). Το **Databricks** (για Apache Spark) είναι ο απόλυτος βασιλιάς στα μεγάλα ελληνικά Data Teams, μαζί με το **Snowflake** ή το **Google BigQuery** (ως Data Warehouses).
+- **Data Modeling / Transformation:** Το **dbt (data build tool)** έχει γίνει το de facto standard. Πρέπει να το ξέρετε.
+- **BI / Visualization:** Το **Power BI** κυριαρχεί απόλυτα στην Ελλάδα, ακολουθούμενο από το Tableau.
+- **Orchestration:** **Airflow** (γράφοντας Python DAGs) για προγραμματισμό (scheduling) εργασιών.
+
 ---
 
 ## ☕ A Day in the Life of a 2026 Data Professional (Στην Ελλάδα)
@@ -172,6 +187,11 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 - **"Πρέπει να πάρουμε Stakeholder buy-in"**: Πρέπει να πείσουμε τον Director/VP ότι η AI ιδέα μας αξίζει, αλλιώς δεν θα μας δώσουν budget/χρόνο.
 - **"Legacy Systems"**: Συστήματα (συνήθως τραπεζικά ή τηλεπικοινωνιών) φτιαγμένα πριν από 20 χρόνια που κανείς δεν τολμάει να αγγίξει, αλλά εσύ πρέπει να πάρεις δεδομένα από εκεί.
 - **"Churn"**: Όταν ο πελάτης μας εγκαταλείπει (π.χ. φεύγει από τη Vodafone για την Cosmote). Το Άγιο Δισκοπότηρο της ανάλυσης δεδομένων είναι να προβλέψουμε το Churn πριν συμβεί.
+- **"Proof of Concept (PoC)"**: Μια γρήγορη, "πρόχειρη" εκδοχή ενός project για να δούμε αν δουλεύει, πριν επενδύσουμε μήνες σε αυτό.
+- **"Technical Debt (Τεχνικό Χρέος)"**: Ο κακογραμμένος κώδικας που γράψαμε βιαστικά πέρυσι για να προλάβουμε το deadline, και τώρα μας κοστίζει χρόνο κάθε μέρα επειδή είναι unmaintainable.
+- **"Red Tape (Γραφειοκρατία)"**: Όταν χρειάζεσαι 5 εγκρίσεις από διαφορετικούς Διευθυντές μόνο και μόνο για να πάρεις πρόσβαση σε έναν πίνακα της βάσης δεδομένων (κλασικό φαινόμενο σε Ελληνικές Τράπεζες).
+- **"MVP (Minimum Viable Product)"**: Η πιο βασική έκδοση του dashboard/μοντέλου που μπορούμε να δώσουμε στους χρήστες, χωρίς τα "φανταχτερά" features, απλά για να πάρουμε feedback γρήγορα.
+- **"On-Prem (On-Premises)"**: Οι servers που βρίσκονται φυσικά στο υπόγειο της εταιρείας, αντί για το Cloud (AWS/Azure). Πολλές ελληνικές εταιρείες είναι ακόμα On-Prem λόγω αυστηρής νομοθεσίας.
 
 ---
 
