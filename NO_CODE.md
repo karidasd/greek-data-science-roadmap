@@ -35,6 +35,19 @@
 Αυτή η διαδικασία με "παραδοσιακό" Data Engineering θα ήθελε: setup ενός Server, γράψιμο cron jobs, εγκατάσταση βιβλιοθηκών Python, διαχείριση API Keys σε `.env` αρχεία, και ατελείωτο error handling. Το No-Code τα κάνει όλα visual!
 
 ---
+
+## 📧 Make.com AI Resume Parser (HR Automation)
+Ένα δεύτερο σενάριο (πιο advanced) στο **Make.com**: Η εταιρεία λαμβάνει βιογραφικά στο email `careers@mycompany.gr`. 
+
+1. **Trigger (Webhook/Email):** Το Make.com "ακούει" το inbox. Μόλις έρθει email με PDF attachment, ξεκινάει.
+2. **Data Extraction (PDF to Text):** Χρησιμοποιεί ένα ενσωματωμένο node για να διαβάσει το κείμενο από το PDF.
+3. **AI Magic (OpenAI):** Στέλνει το κείμενο στο GPT-4o με το Prompt: *"Εξήγαγε το Όνομα, το Email, τα Χρόνια Εμπειρίας, και 3 βασικά Skills σε μορφή JSON"*.
+4. **Database (Airtable/Notion):** Παίρνει το καθαρό JSON και φτιάχνει μια νέα εγγραφή στο Airtable CRM της εταιρείας.
+5. **Auto-Reply (Gmail):** Στέλνει αυτόματα email στον υποψήφιο: *"Γεια σου [Όνομα], λάβαμε το βιογραφικό σου!"*
+
+**Χρόνος ανάπτυξης:** 20 λεπτά. **Αξία για την εταιρεία:** Απεριόριστη.
+
+---
 💡 **Takeaway:** Το skill του μέλλοντος δεν είναι "γράφω Python". Είναι **"ξέρω ποιο εργαλείο (Python, n8n, ChatGPT) να χρησιμοποιήσω για να λύσω το πρόβλημα σε 5 λεπτά αντί για 5 μέρες."**
 
 ---

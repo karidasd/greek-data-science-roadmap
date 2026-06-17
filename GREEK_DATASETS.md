@@ -23,6 +23,23 @@
 * **Web Scraping (Spitogatos, XE.gr, Skroutz):** Αν και δεν υπάρχουν επίσημα APIs, η συλλογή δεδομένων με BeautifulSoup ή Selenium είναι εξαιρετικό skill.
   * *Ιδέα για Project:* Scraper που μαζεύει τιμές ενοικίων στο κέντρο της Αθήνας και φτιάχνει έναν διαδραστικό χάρτη με Folium που δείχνει πού είναι τα "φθηνά" διαμερίσματα.
 
+* **[e-katanalotis.gov.gr](https://e-katanalotis.gov.gr/):** Η πλατφόρμα με τιμές από σούπερ μάρκετ και καύσιμα.
+  * *Ιδέα για Project:* Σύγκριση "Καλαθιού του Νοικοκυριού" ανάμεσα σε 3 αλυσίδες και δημιουργία Dashboard Πληθωρισμού.
+
+## 5. 📦 Kaggle Greek Datasets
+* **[Kaggle Search: Greece](https://www.kaggle.com/datasets?search=greece):**
+  Στο Kaggle υπάρχουν έτοιμα καθαρισμένα datasets (π.χ. Airbnb listings in Athens, OASA bus routes, Greek fires). 
+  * *Ιδέα για Project:* Εξαιρετικό μέρος για να βρείτε έτοιμα CSVs αν δεν θέλετε να χτίσετε δικούς σας scrapers.
+
+---
+
+## ⚖️ The "Scraping Ethics" (Και πώς να μη φάτε IP Ban)
+Πολλά ελληνικά sites (π.χ. efood, Spitogatos, Car.gr) **δεν** δίνουν Public API. Ο μόνος τρόπος να πάρετε δεδομένα είναι το Web Scraping (με BeautifulSoup ή Selenium).
+**ΠΡΟΣΟΧΗ:** 
+1. Πάντα να ελέγχετε το `robots.txt` του site (π.χ. `spitogatos.gr/robots.txt`). Σας λέει τι επιτρέπεται και τι απαγορεύεται.
+2. Βάλτε `time.sleep(2)` ανάμεσα στα requests σας! Αν στείλετε 1.000 requests σε 1 δευτερόλεπτο, όχι μόνο θα φάτε ban από το firewall τους (π.χ. Cloudflare), αλλά ίσως ρίξετε και τον server τους (DDoS attack), το οποίο διώκεται ποινικά.
+3. Μην κάνετε scrape προσωπικά δεδομένα (GDPR!).
+
 ---
 
 ## ⌨️ Code Snippets (Πώς "χτυπάμε" τα Ελληνικά APIs)

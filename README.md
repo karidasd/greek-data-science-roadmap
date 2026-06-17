@@ -160,6 +160,24 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 ---
 
+## 💼 Freelancing & B2B (Το "Μπλοκάκι") στην Ελλάδα
+Η εργασία με Δελτίο Παροχής Υπηρεσιών (Μπλοκάκι / B2B) είναι ραγδαία ανερχόμενη, ειδικά επειδή επιτρέπει Remote εργασία για εταιρείες του εξωτερικού.
+- **Το Πλεονέκτημα:** Μπορείς να ζεις στην Ελλάδα και να χρεώνεις rates εξωτερικού (π.χ. $40-$80/ώρα ως Data Engineer στο Upwork/Toptal). 
+- **Τα Φορολογικά (χονδρικά):** Ως Ελεύθερος Επαγγελματίας στην Ελλάδα, συνήθως το πρώτο σου έτος έχει ευνοϊκή φορολογία, αλλά πρέπει να υπολογίζεις πάντα τον ΕΦΚΑ (ασφάλεια) και το ΦΠΑ (αν δουλεύεις με Έλληνες πελάτες). Για B2B με Αμερική/Ευρώπη, το ΦΠΑ συνήθως απαλλάσσεται (VIES).
+- **Πώς να ξεκινήσεις:** Πολλές ελληνικές επιχειρήσεις (π.χ. e-shops, μικρά λογιστικά γραφεία) χρειάζονται κάποιον να τους στήσει *ένα* dashboard. Πούλησε το αποτέλεσμα (το Dashboard), όχι τις ώρες σου!
+
+---
+
+## 📜 Ποιες Πιστοποιήσεις (Certifications) αξίζουν;
+Μην ξοδεύετε χρήματα σε τυχαία "Data Science Certificates" από άγνωστα sites. Η αγορά (και τα ATS συστήματα) αναγνωρίζουν κυρίως τα Vendor-Specific certifications:
+1. **Cloud:** *Microsoft Certified: Azure Data Engineer Associate (DP-203)* ή *AWS Certified Data Engineer*. (Αυτά έχουν την υψηλότερη ζήτηση στην Ελλάδα).
+2. **Data Modeling:** *dbt Analytics Engineering Certification*. Δείχνει ότι ξέρεις μοντέρνο Data Engineering.
+3. **Big Data:** *Databricks Certified Data Engineer Associate*. 
+
+Τα πιστοποιητικά από Coursera (όπως το Google Data Analytics) είναι εξαιρετικά **μόνο** για αρχάριους (entry-level) για να μάθουν τα βασικά, αλλά δεν εγγυώνται δουλειά σε Senior επίπεδο.
+
+---
+
 ## 💡 "Greek-Flavored" Portfolio Projects
 Θέλετε να ξεχωρίσετε στα interviews; Φτιάξτε projects που αφορούν την Ελλάδα. Αυτό δείχνει Business Acumen!
 1. **Real Estate Analytics:** Κάντε web scraping σε αγγελίες ακινήτων (π.χ. Spitogatos) και φτιάξτε ένα Power BI Dashboard με τις τιμές ενοικίων ανά περιοχή.

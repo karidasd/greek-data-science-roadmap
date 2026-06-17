@@ -35,6 +35,14 @@ git commit -m "Add great Python YouTube channel to resources"
 git push origin add-my-new-resource
 ```
 
+---
+**🌲 Προαιρετικό (Αλλά Επαγγελματικό): Branch Naming**
+Στον πραγματικό κόσμο, τα branches δεν ονομάζονται "test" ή "my-branch". Ακολουθούμε συγκεκριμένη ονοματολογία:
+- Αν προσθέτεις κάτι νέο: `feature/onoma-tou-feature` (π.χ. `feature/add-make-tutorial`)
+- Αν διορθώνεις ένα λάθος: `bugfix/onoma-tou-bug` (π.χ. `bugfix/fix-typo-in-readme`)
+- Αν γράφεις documentation: `docs/onoma-tis-allagis` (π.χ. `docs/update-contributing`)
+---
+
 ## Βήμα 7: Κάνε το Pull Request (PR)
 1. Πήγαινε στη σελίδα του δικού σου repo στο GitHub.
 2. Θα δεις ένα πράσινο κουμπί που λέει **"Compare & pull request"**. Πάτα το.
