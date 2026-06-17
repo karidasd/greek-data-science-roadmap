@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn",
+    "type": "Course",
+    "cost": "Free",
+    "language": "English",
+    "level": "Beginner"
+  },
+  {
+    "title": "Alex The Analyst YouTube Channel",
+    "url": "https://www.youtube.com/c/AlexTheAnalyst",
+    "type": "Video",
+    "cost": "Free",
+    "language": "English",
+    "level": "Beginner"
+  },
+  {
+    "title": "Google Data Analytics Professional Certificate",
+    "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+    "type": "Course",
+    "cost": "Paid",
+    "language": "English",
+    "level": "Beginner"
+  },
+  {
+    "title": "StatQuest with Josh Starmer",
+    "url": "https://www.youtube.com/user/joshstarmer",
+    "type": "Video",
+    "cost": "Free",
+    "language": "English",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Hands-On Machine Learning with Scikit-Learn",
+    "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/",
+    "type": "Book",
+    "cost": "Paid",
+    "language": "English",
+    "level": "Intermediate"
+  }
+]
