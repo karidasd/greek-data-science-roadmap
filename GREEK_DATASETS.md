@@ -25,3 +25,12 @@
 
 ---
 💡 **Pro Tip:** Χρησιμοποιήστε το [Greek-Data-Kit](https://github.com/karidasd/Greek-Data-Kit) που είναι ήδη φτιαγμένο για να διευκολύνει την άντληση πολλών από αυτά τα δεδομένα!
+
+---
+
+## 🚀 Πώς να φιλοξενήσετε το Portfolio σας (Δωρεάν)
+Το να έχετε απλά τον κώδικα στο GitHub είναι καλό. Το να στείλετε ένα link στον Hiring Manager με ένα **live web app** που μπορεί να πατήσει κουμπιά και να δει γραφήματα είναι 10 φορές καλύτερο. Ορίστε πώς θα "ανεβάσετε" τα ελληνικά projects σας δωρεάν:
+
+1. **Streamlit Community Cloud:** Ιδανικό για Data Analysts/Scientists. Γράφετε ένα απλό Python script (`app.py`) με το `streamlit`, το κάνετε push στο GitHub, και το Streamlit το μετατρέπει σε Web App δωρεάν.
+2. **Vercel / Netlify:** Ιδανικά αν έχετε φτιάξει ένα dashboard με καθαρή HTML/JS ή React. Απίστευτα γρήγορο deploy.
+3. **Render:** Αν το project σας είναι ένα Backend API (π.χ. ένα FastAPI που δέχεται τετραγωνικά και περιοχή και προβλέπει τιμές ενοικίων), το Render παρέχει δωρεάν hosting για web services. Το free tier "κοιμάται" μετά από 15 λεπτά αδράνειας, αλλά για portfolio είναι τέλειο!

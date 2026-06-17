@@ -21,4 +21,12 @@ If you want to improve the interactive `roadmap.html` or fix typos in the README
 2. Ensure your changes make sense and follow the existing structure.
 3. Submit a Pull Request. I will review it as soon as possible.
 
+---
+
+## 🛡️ Code of Conduct
+Παρακαλούμε να είστε ευγενικοί και υποστηρικτικοί. Αυτή είναι μια κοινότητα μάθησης για όλους τους Data Professionals στην Ελλάδα.
+- Δεν υπάρχουν "χαζές ερωτήσεις" στα Issues.
+- Κανένα Pull Request (ακόμα και αν έχει λάθη στον κώδικα) δεν αντιμετωπίζεται με ειρωνεία. Όλοι ξεκινήσαμε από το μηδέν. 
+- Σχόλια που περιέχουν προσβολές στα PRs ή στα Issues θα διαγράφονται άμεσα και ο χρήστης θα γίνεται block.
+
 Happy Coding! 🚀

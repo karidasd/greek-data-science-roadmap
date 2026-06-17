@@ -134,6 +134,17 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 ---
 
+## ☕ A Day in the Life of a 2026 Data Professional (Στην Ελλάδα)
+
+Πώς μοιάζει η καθημερινότητα τώρα που ο κώδικας αυτοματοποιείται;
+- **09:00 - 09:30 | Daily Standup:** Δεν λες "έγραψα το SQL query". Λες "Έστησα το LangChain agent που διαβάζει τα logs και τώρα κάνω review τα αποτελέσματά του."
+- **09:30 - 11:00 | Prompting & Orchestration:** Αντί να γράφεις boilerplate κώδικα, μιλάς με τον GitHub Copilot ή το Cursor. Ορίζεις τα schemas και ζητάς από το AI να φτιάξει τα dbt models.
+- **11:00 - 13:00 | Model Auditing (Reviewer Mode):** Ελέγχεις τα insights που παρήγαγε το AI. Μήπως το μοντέλο είχε hallucination επειδή δεν κατάλαβε τα ελληνικά δεδομένα; (π.χ. μπέρδεψε τον "Νομό Αττικής" με τον "Δήμο Αθηναίων").
+- **14:00 - 16:00 | Stakeholder Management:** Πηγαίνεις στα business departments (Marketing, Sales) και τους εξηγείς **γιατί** το μοντέλο προτείνει αυτή τη στρατηγική. *Το Data Storytelling είναι πλέον η κύρια δουλειά σου.*
+- **16:00 - 17:00 | Continuous Learning:** Διαβάζεις τα latest research papers. Το tech stack αλλάζει κάθε 3 μήνες.
+
+---
+
 ## 💡 "Greek-Flavored" Portfolio Projects
 Θέλετε να ξεχωρίσετε στα interviews; Φτιάξτε projects που αφορούν την Ελλάδα. Αυτό δείχνει Business Acumen!
 1. **Real Estate Analytics:** Κάντε web scraping σε αγγελίες ακινήτων (π.χ. Spitogatos) και φτιάξτε ένα Power BI Dashboard με τις τιμές ενοικίων ανά περιοχή.
@@ -157,6 +168,10 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 - **"Κάνε ένα quick align με τον PM"**: Πήγαινε μίλα με τον Product Manager γιατί διαφωνείτε στο τι πρέπει να φτιαχτεί.
 - **"Μην το κάνουμε over-engineer"**: Μην γράφεις 500 γραμμές κώδικα (ή Deep Learning) για κάτι που λύνεται με ένα απλό `GROUP BY`.
 - **"Ποιο είναι το Business value;"**: Αν αυτό που φτιάχνεις δεν φέρνει έσοδα ή δεν γλιτώνει χρόνο, δεν πρέπει να το φτιάξουμε.
+- **"Έχουμε πολλά Silos"**: Το τμήμα Πωλήσεων δεν μιλάει με το τμήμα Marketing, τα δεδομένα τους είναι σε διαφορετικές βάσεις (silos), και εμείς πρέπει να τα ενώσουμε (Nightmare).
+- **"Πρέπει να πάρουμε Stakeholder buy-in"**: Πρέπει να πείσουμε τον Director/VP ότι η AI ιδέα μας αξίζει, αλλιώς δεν θα μας δώσουν budget/χρόνο.
+- **"Legacy Systems"**: Συστήματα (συνήθως τραπεζικά ή τηλεπικοινωνιών) φτιαγμένα πριν από 20 χρόνια που κανείς δεν τολμάει να αγγίξει, αλλά εσύ πρέπει να πάρεις δεδομένα από εκεί.
+- **"Churn"**: Όταν ο πελάτης μας εγκαταλείπει (π.χ. φεύγει από τη Vodafone για την Cosmote). Το Άγιο Δισκοπότηρο της ανάλυσης δεδομένων είναι να προβλέψουμε το Churn πριν συμβεί.
 
 ---
 
