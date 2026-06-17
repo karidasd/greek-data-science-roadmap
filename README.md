@@ -172,6 +172,26 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 ---
 
+## 🏛️ Ελληνικά Open Data Sources
+Διαβάστε το [GREEK_DATASETS.md](GREEK_DATASETS.md) για να βρείτε πηγές δεδομένων (ΕΛΣΤΑΤ, Διαύγεια, data.gov.gr) ώστε να χτίσετε μοναδικά projects.
+
+---
+
+## 🤖 Mock Interview Simulator Prompts
+Στο αρχείο [PROMPTS.md](PROMPTS.md) θα βρείτε έτοιμα System Prompts. Κάντε τα copy-paste στο ChatGPT/Claude για να εξασκηθείτε σε τεχνικές συνεντεύξεις.
+
+---
+
+## 📓 RAG Demo Notebook
+Ανοίξτε το [`notebooks/agentic_demo.ipynb`](notebooks/agentic_demo.ipynb) για να δείτε πώς στήνουμε ένα LangChain workflow (Agentic AI) με λίγες γραμμές Python. 
+
+---
+
+## 🛠️ No-Code & Automation
+Διαβάστε το [NO_CODE.md](NO_CODE.md) για να μάθετε ποια εργαλεία (n8n, Make, Zapier) είναι απαραίτητα για AI Orchestration χωρίς κώδικα.
+
+---
+
 ## 🏢 Real Greek Business Cases
 Διαβάστε το [SCENARIOS.md](SCENARIOS.md) για να δείτε 3 πραγματικά σενάρια που αντιμετωπίζουν οι Έλληνες Data Professionals (Τράπεζες, NPLs, E-commerce) και πώς πρέπει να τα σκεφτείτε.
 
