@@ -134,6 +134,28 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 ---
 
+## 💡 "Greek-Flavored" Portfolio Projects
+Θέλετε να ξεχωρίσετε στα interviews; Φτιάξτε projects που αφορούν την Ελλάδα. Αυτό δείχνει Business Acumen!
+1. **Real Estate Analytics:** Κάντε web scraping σε αγγελίες ακινήτων (π.χ. Spitogatos) και φτιάξτε ένα Power BI Dashboard με τις τιμές ενοικίων ανά περιοχή.
+2. **Sentiment Analysis σε Ελληνικά News/Twitter:** Χρησιμοποιήστε LangChain και το ChatGPT API για να αναλύσετε τι λένε οι Έλληνες για ένα τρέχον θέμα.
+3. **Ανάλυση ΕΛΣΤΑΤ:** Χρησιμοποιήστε το [Greek-Data-Kit](https://github.com/karidasd/Greek-Data-Kit) για να αναλύσετε τον πληθωρισμό, την ανεργία ή τον τουρισμό και γράψτε ένα ωραίο Data Story στο LinkedIn.
+
+---
+
+## 🏢 Ελληνικά Communities & Meetups
+Το networking είναι το 50% της επιτυχίας. Γίνετε μέλη σε αυτές τις κοινότητες:
+- **Data Science Athens:** Το μεγαλύτερο meetup στην Αθήνα.
+- **PyGreece:** Η κοινότητα της Python στην Ελλάδα.
+- **Athens Big Data:** Εστιασμένο σε Data Engineering & Architecture.
+- **Tech Talent School / Social Hackers Academy:** Για δωρεάν webinars και networking events.
+
+---
+
+## 🎤 Technical Interviews
+Διαβάστε το [INTERVIEWS.md](INTERVIEWS.md) για να δείτε τι ακριβώς ρωτάνε οι ελληνικές εταιρείες στα technical assessments (HackerRank, Take-home projects).
+
+---
+
 ## 🤝 Contributing
 
 Θέλετε να προσθέσετε νέα resources για Agentic AI, Vector Databases ή Prompt Engineering;

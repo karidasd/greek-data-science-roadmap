@@ -50,6 +50,22 @@
         }
         .node:hover .tooltip-text { visibility: visible; opacity: 1; bottom: 110%; }
 
+        /* Resources Table Styling */
+        #resources-section { margin-top: 60px; padding: 20px; background: #1e293b; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5); }
+        #resources-section h2 { text-align: center; color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 10px; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #334155; }
+        th { background-color: #0f172a; color: #94a3b8; font-weight: 600; text-transform: uppercase; font-size: 0.85em; letter-spacing: 0.05em; }
+        tr:hover { background-color: #334155; }
+        td a { color: #38bdf8; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+        td a:hover { color: #7dd3fc; text-decoration: underline; }
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.85em; font-weight: 600; }
+        .type-course { background: #3b82f6; color: #eff6ff; }
+        .type-video { background: #ef4444; color: #fef2f2; }
+        .type-book { background: #eab308; color: #fefce8; }
+        .cost-free { background: #22c55e; color: #f0fdf4; }
+        .cost-paid { background: #64748b; color: #f8fafc; }
+
     </style>
 </head>
 <body>
@@ -115,5 +131,44 @@
 
     </div>
 
+    <!-- Dynamic Resources Section -->
+    <div id="resources-section">
+        <h2>📚 Recommended Resources</h2>
+        <table id="resources-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Level</th>
+                    <th>Cost</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populated by JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Fetch and render resources.json
+        fetch('resources.json')
+            .then(response => response.json())
+            .then(data => {
+                const tbody = document.querySelector('#resources-table tbody');
+                data.forEach(resource => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td><a href="${resource.url}" target="_blank">${resource.title}</a></td>
+                        <td><span class="badge type-${resource.type.toLowerCase()}">${resource.type}</span></td>
+                        <td>${resource.level}</td>
+                        <td><span class="badge cost-${resource.cost.toLowerCase()}">${resource.cost}</span></td>
+                        <td>${resource.language}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            })
+            .catch(error => console.error('Error loading resources:', error));
+    </script>
 </body>
 </html>
