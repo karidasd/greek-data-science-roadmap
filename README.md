@@ -97,6 +97,18 @@ In an era where coding is commoditized, your human edge lies in areas AI struggl
 
 ---
 
+## 🧠 Essential Soft Skills for the Agentic Era
+
+Καθώς τα hard skills (coding) αυτοματοποιούνται, τα soft skills γίνονται το κύριο ανταγωνιστικό πλεονέκτημα:
+
+- 🗣️ **Data Storytelling & Επικοινωνία**: Η ικανότητα να μεταφράζεις πολύπλοκα αποτελέσματα (AI outputs) σε απλές, κατανοητές business προτάσεις.
+- 🧩 **Adaptability (Προσαρμοστικότητα)**: Τα εργαλεία αλλάζουν κάθε 6 μήνες. Το skill είναι να μαθαίνεις πώς να μαθαίνεις νέα AI frameworks, όχι να δένεσαι με ένα.
+- 🤝 **Stakeholder Management**: Να μπορείς να πείσεις τη διοίκηση να επενδύσει σε ένα AI project, διαχειριζόμενος σωστά τις προσδοκίες τους (χωρίς hype).
+- 🤔 **Critical & First-Principles Thinking**: Να μην παίρνεις το output του LLM ως "ευαγγέλιο", αλλά να ελέγχεις τη λογική του βήμα-βήμα.
+- 🛡️ **Ηθική & Ενσυναίσθηση**: Να κατανοείς τον αντίκτυπο που έχουν τα μοντέλα που φτιάχνεις στους τελικούς χρήστες (π.χ. αλγοριθμική μεροληψία, bias).
+
+---
+
 ## 📈 Skills by Level (The 2026 Shift)
 
 | Role / Level | Junior (0-2 years) | Mid-Level (2-5 years) | Senior (5+ years) |
