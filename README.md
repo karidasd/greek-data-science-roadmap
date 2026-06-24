@@ -6,6 +6,8 @@
 
 > **Ο πλήρης οδηγός για την εποχή όπου τα εργαλεία αυτοματοποιούνται — Εστιάζοντας σε Critical Thinking, Domain Knowledge και AI Orchestration.**
 
+**🔥 ΝΕΟ ΔΙΑΔΡΑΣΤΙΚΟ ΕΡΓΑΛΕΙΟ:** Πριν ξεκινήσεις να διαβάζεις, [Δες το Live AI Job Radar!](https://karidasd.github.io/ai-data-science-jobs/). Είναι ένα custom ρομπότ που σαρώνει καθημερινά +300 παγκόσμιες αγγελίες, εξάγει κρυφούς μισθούς με NLP και σου λέει με ακρίβεια ποια είναι τα **Top 100 Live Remote Jobs** σήμερα, για να ξέρεις ποια skills "πουλάνε".
+
 Welcome to the **2026 Edition** of the Greek Data Science Roadmap. We are now deeply immersed in the Agentic AI era. Writing basic SQL queries or Pandas scripts is no longer the bottleneck; AI agents do that in seconds. The modern data professional in Greece (and globally) must pivot from *syntax memorizer* to *AI orchestrator*.
 
 This guide outlines the new reality: **How to guide AI, not compete with it.**
